@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.{html,js}",
+    "./**/*.html"
   ],
   theme: {
     extend: {
@@ -12,6 +13,9 @@ module.exports = {
       },
     },
   },
+  corePlugins: {
+    preflight: true,
+  },
+  purge: false,
   plugins: [],
 }
-
