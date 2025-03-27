@@ -8,5 +8,5 @@ To install Yam, simply run:
 
 ```bash
 npm i
-npm run tbuild
+npm run build
 ```
