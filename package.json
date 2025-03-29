@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss build src/css/styles.css -o dist/css/styles.css",
-    "tbw": "tailwindcss build src/css/styles.css -o dist/css/styles.css --watch"
+    "tailwind": "tailwindcss build src/input.css -o build/assets/css/style.css --watch"
   },
   "keywords": [],
   "author": "",
