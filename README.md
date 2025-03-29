@@ -1,12 +1,19 @@
 ## Yam Template
 
-Yam is a simple template engine for Python. It is designed to be easy to use and easy to understand. It is also designed to be easy to extend and customize.
+Yam is a simple template for building websites. It uses Tailwind CSS for styling and Alpine.js for interactivity.
 
 ### Installation
 
 To install Yam, simply run:
 
 ```bash
-npm i
-npm run build
+npm install
+```
+
+### Building
+
+To build Yam, simply run:
+
+```bash
+npm run tailwind
 ```
