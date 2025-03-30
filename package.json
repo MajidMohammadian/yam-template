@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "tailwind": "tailwindcss build src/input.css -o build/assets/css/style.css --watch"
+    "tailwind": "tailwindcss build src/input.css -o build/assets/css/style.css --watch",
+    "prettier": "prettier --write build/**/*.html"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,8 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^3.4.1"
   }
 }
