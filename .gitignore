@@ -1,6 +1,5 @@
-/node_modules
-/dist
-package-lock.json
-
 .idea
 .vscode
+
+/node_modules
+/build/assets/css
