@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: 'Poppins';
+    src:    url('/build/font/Poppins/OFL.txt') format('woff2'),
+            url('/build/font/Poppins/Poppins-Black.ttf') format('woff'),
+            url('/build/font/Poppins/Poppins-BlackItalic.ttf') format('truetype'),
+            url('/build/font/Poppins/Poppins-ExtraBold.ttf') format('truetype'),
+            url('/build/font/Poppins/Poppins-ExtraBoldItalic.ttf') format('truetype'),
+            url('/build/font/Poppins/Poppins-Bold.ttf') format('truetype'),
+            url('/build/font/Poppins/Poppins-BoldItalic.ttf') format('truetype'),
+            url('/build/font/Poppins/Poppins-SemiBold.ttf') format('truetype'),
+            url('/build/font/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype'),
+            url('/build/font/Poppins/Poppins-ExtraLight.ttf') format('truetype'),
+            url('/build/font/Poppins/Poppins-ExtraLightItalic.ttf') format('truetype'),
+            url('/build/font/Poppins/Poppins-Light.ttf') format('truetype'),
+            url('/build/font/Poppins/Poppins-LightItalic.ttf') format('truetype'),
+            url('/build/font/Poppins/Poppins-Regular.ttf') format('truetype'),
+            url('/build/font/Poppins/Poppins-Italic.ttf') format('truetype'),
+            url('/build/font/Poppins/Poppins-Medium.ttf') format('truetype'),
+            url('/build/font/Poppins/Poppins-MediumItalic.ttf') format('truetype'),
+            url('/build/font/Poppins/Poppins-Thin.ttf') format('truetype');
+    font-weight: light; 
+    font-style: light;   
+    font-display: swap;  
+  }
