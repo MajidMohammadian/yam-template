@@ -5,12 +5,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      },
       colors: {
         primary: "#f58220",
         lightPrimary: "#fb923c33",
         hoverPrimary: "#f97316",
         brown: "#431407",
-        yellow :"#f58220"
+        Gray : "#475569",
+        hoverGray : "#334155",
       },
     },
   },
