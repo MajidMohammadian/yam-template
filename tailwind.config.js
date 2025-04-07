@@ -13,7 +13,7 @@ module.exports = {
         lightPrimary: "#fb923c33",
         hoverPrimary: "#f97316",
         brown: "#431407",
-        Gray : "#475569",
+        Gray : "#1e293b",
         hoverGray : "#334155",
       },
     },
