@@ -1,312 +1,1054 @@
 <!doctype html>
 <html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Page</title>
-  <link href="../assets/css/style.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-</head>
-
-<body>
-  <nav class="text-white bg-brown h-8 items-center flex z-20">
-    <div class="container mx-auto px-3 w-full">
-      <div class="grid grid-cols-3 items-center gap-4">
-        <div class="relative">
-          <div class="">
-            <button class="flex">
-              <img src="/build/assets/img/flags/us.jpg " alt="" width="21" height="14" class="me-3 h-3.5">
-              <span class="text-xs font-medium">English (USA)</span>
-            </button>
-          </div>
-          <div class="absolute z-50 mt-4 bg-white min-w-[140px] rounded shadow-md hidden">
-            <ul>
-              <li>
-                <button class="flex items-center w-full  gap-2 rounded px-3 py-2 font-normal">
-                  <img src="/build/assets/img/flags/us.jpg" alt="" width="24" height="16" class="h-4">
-                  <span class="font-medium text-Gray font-sans">English</span>
+  <body>
+    <header>
+      <nav class="text-white bg-brown lg:block hidden">
+        <div class="container">
+          <div class="row items-center h-8">
+            <div class="col-4">
+              <div class="relative">
+                <button class="flex">
+                  <img
+                    src="/build/assets/img/flags/us.jpg "
+                    alt=""
+                    width="21"
+                    height="14"
+                    class="me-3 h-3.5"
+                  />
+                  <span class="text-xs font-medium">English (USA)</span>
                 </button>
-              </li>
-              <li>
-                <button class="flex items-center w-full  gap-2 rounded px-3 py-2 font-normal">
-                  <img src="/build/assets/img/flags/french.jfif " alt="" width="24" height="16" class="h-4">
-                  <span class="font-medium text-Gray font-sans">French</span>
-                </button>
-              </li>
-              <li>
-                <button class="flex items-center w-full  gap-2 rounded px-3 py-2 font-normal">
-                  <img src="/build/assets/img/flags/German.jfif " alt="" width="24" height="16" class="h-4">
-                  <span class="font-medium text-Gray font-sans">German</span>
-                </button>
-              </li>
-              <li>
-                <button class="flex items-center w-full  gap-2 rounded px-3 py-2 font-normal">
-                  <img src="/build/assets/img/flags/Spanish.jfif " alt="" width="24" height="16" class="h-4">
-                  <span class="font-medium text-Gray font-sans">Spanish</span>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <h5 class="text-center text-sm text-primary-50">Free Delivery Over $50 <a class="font-semibold underline"
-              href="/yum_r/home">Claim Offer</a></h5>
-        </div>
-        <div>
-          <div class="flex justify-end">
-            <a href="" class="p-2">Help</a>
-            <a href="" class="p-2">Contact Us</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <header class="sticky inset-x-0 top-0 z-30 w-full bg-slate-200">
-    <div class="flex h-20 items-center">
-      <div class="container mx-auto px-3 w-full">
-        <div class="grid grid-cols-3 gap-5">
-          <div class="flex">
-            <img src="/build/assets/img/logo/logo-1-png.png" alt="" width="130" height="40">
-          </div>
-          <ul class="relative flex justify-center items-center">
-            <li>
-              <a href=""
-                class="inline-flex items-center text-sm lg:text-base font-medium py-2 px-4 hover:text-primary">Home</a>
-            </li>
-            <li>
-              <div class="inline-flex">
-                <button class="inline-flex items-center text-sm lg:text-base font-medium py-2 px-4 hover:text-primary">
-                  Dishes
-                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                    stroke-linejoin="round" class="ms-2" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m6 9 6 6 6-6"></path>
-                  </svg>
-                </button>
-              </div>
-            </li>
-            <li>
-              <div class="inline-flex relative">
-                <button
-                  class="inline-flex items-center text-sm lg:text-base font-medium py-2 px-4 hover:text-primary whitespace-nowrap">
-                  Mega Menu
-                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                    stroke-linejoin="round" class="ms-2" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m6 9 6 6 6-6"></path>
-                  </svg>
-                </button>
-                <div class="absolute inset-x-0 top-full z-10 mt-4 w-full min-w-full hidden" style="position: fixed; inset: 90px auto auto 0px;">
-                  <div class="container mx-auto px-3 w-full">
-                    <div class="overflow-hidden rounded-lg border border-default-200 bg-white shadow-lg dark:bg-default-50">
-                      <div class="grid grid-cols-12">
-                        <div class="col-span-2">
-                          <div class="h-full w-full px-6 py-10">
-                            <nav class="flex flex-col space-y-3.5">
-                              <button class="flex justify-between">
-                                Wraps
-                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ms-auto" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg>
-                              </button>
-                              <button class="flex justify-between">
-                                Noodles 
-                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ms-auto" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg>
-                              </button>
-                              <button class="flex justify-between">
-                                Mexican cuisine 
-                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ms-auto" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg>
-                              </button>
-                              <button class="flex justify-between">
-                                Tacos 
-                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ms-auto" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg>
-                              </button>
-                              <button class="flex justify-between">
-                                Smart Meals  
-                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ms-auto" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg>
-                              </button>
-                              <button class="flex justify-between">
-                                Burger 
-                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ms-auto" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg>
-                              </button>
-                              <button class="flex justify-between">
-                                Beverages & Desserts 
-                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ms-auto" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg>
-                              </button>
-                            </nav>
-                          </div>
-                        </div>
-                        <div class="col-span-10">
-                         <div class="py-10">
-                          <div class="grid grid-cols-4 divide-x  text-Gray">
-                            <div class="ps-6">
-                              <h6 class="text-base font-medium text-Gray">
-                                Italian Pasta Dishes
-                              </h6>
-                              <ul class="mt-4 grid space-y-3">
-                                <li>Spaghetti Bolognese</li>
-                                <li>Fettuccine Alfredo</li>
-                                <li>Lasagna</li>
-                                <li>Carbonara</li>
-                                <li>Penne alla Vodka</li>
-                              </ul>
-                            </div>
-                            <div class="ps-6">
-                              <h6 class="text-base font-medium text-Gray">Asian Noodle Dishes</h6>
-                              <ul class="mt-4 grid space-y-3">
-                                <li>Ramen</li>
-                                <li>Pad Thai</li>
-                                <li>Pho</li>
-                                <li>Chow Mein</li>
-                                <li>Udon Stir-Fry</li>
-                                <li>Soba Noodles</li>
-                                <li>Lo Mein</li>
-                              </ul>
-                            </div>
-                            <div class="ps-6">
-                              <h6 class="text-base font-medium text-Gray">Chinese Noodle Dishes</h6>
-                              <ul class="mt-4 grid space-y-3">
-                                <li>Beef Chow Fun</li>
-                                <li>Dan Dan Noodles</li>
-                                <li>Sesame Noodles</li>
-                                <li>Wonton Noodle Soup</li>
-                                <li>Zha Jiang Mian</li>
-                              </ul>
-                            </div>
-                            <div class="ps-6">
-                              <h6 class="text-base font-medium text-Gray">Japanese Noodle Dishes</h6>
-                              <ul class="mt-4 grid space-y-3">
-                                <li>Yakisoba</li>
-                                <li>Tempura Udon</li>
-                                <li>Hiyashi Chukakies</li>
-                                <li>Sushi Rolls</li>
-                              </ul>
-                            </div>
-                          </div>
-                         </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="inline-flex relative">
-                <button class=" inline-flex items-center text-sm lg:text-base font-medium py-2 px-4 hover:text-primary">
-                  Pages
-                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                    stroke-linejoin="round" class="ms-2" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m6 9 6 6 6-6"></path>
-                  </svg>
-                </button>
-                <div class="absolute z-40 mt-4 min-w-[200px] rounded-lg border border-default-100 bg-white p-1.5 shadow-lg" style="position: fixed; inset: 20px auto auto 0px; margin: 0px; transform: translate(825px, 70px);">
-                  <ul class="flex flex-col gap-1">
+                <div
+                  class="absolute z-50 bg-white min-w-[140px] rounded-lg shadow-md top-full mt-4 -left-3 p-1.5 hidden"
+                >
+                  <ul>
                     <li>
-                      <a href="" class="text-black">Cart</a>
+                      <button
+                        class="flex items-center w-full gap-2 rounded px-3 py-2 font-normal"
+                      >
+                        <img
+                          src="/build/assets/img/flags/us.jpg"
+                          alt=""
+                          width="24"
+                          height="16"
+                          class="h-4"
+                        />
+                        <span class="font-medium text-Gray font-sans"
+                          >English</span
+                        >
+                      </button>
                     </li>
                     <li>
-                      <a href="">Wishlist</a>
+                      <button
+                        class="flex items-center w-full gap-2 rounded px-3 py-2 font-normal"
+                      >
+                        <img
+                          src="/build/assets/img/flags/french.jfif "
+                          alt=""
+                          width="24"
+                          height="16"
+                          class="h-4"
+                        />
+                        <span class="font-medium text-Gray font-sans"
+                          >French</span
+                        >
+                      </button>
                     </li>
                     <li>
-                      <a href="">Checkout</a>
+                      <button
+                        class="flex items-center w-full gap-2 rounded px-3 py-2 font-normal"
+                      >
+                        <img
+                          src="/build/assets/img/flags/German.jfif "
+                          alt=""
+                          width="24"
+                          height="16"
+                          class="h-4"
+                        />
+                        <span class="font-medium text-Gray font-sans"
+                          >German</span
+                        >
+                      </button>
                     </li>
                     <li>
-                      <a href="">FAQ</a>
-                    </li>
-                    <li>
-                      <a href="">Contact Us</a>
-                    </li>
-                    <li>
-                      <a href="">Error 404</a>
-                    </li>
-                    <li>
-                      <a href="">Login</a>
-                    </li>
-                    <li>
-                      <a href="">Register</a>
-                    </li>
-                    <li>
-                      <a href="">Forgot Password</a>
-                    </li>
-                    <li>
-                      <a href="">Reset Password</a>
-                    </li>
-                    <li>
-                      <a href="">Logout</a>
+                      <button
+                        class="flex items-center w-full gap-2 rounded px-3 py-2 font-normal"
+                      >
+                        <img
+                          src="/build/assets/img/flags/Spanish.jfif "
+                          alt=""
+                          width="24"
+                          height="16"
+                          class="h-4"
+                        />
+                        <span class="font-medium text-Gray font-sans"
+                          >Spanish</span
+                        >
+                      </button>
                     </li>
                   </ul>
                 </div>
               </div>
-            </li>
-            <li>
-              <a href=""
-                class="inline-flex items-center text-sm lg:text-base font-medium py-2 px-4 hover:text-primary">Admin</a>
-            </li>
-          </ul>
-          <div class="flex justify-around items-center">
-            <div class="relative w-72">
-              <form action="">
-                <input type="text" placeholder="Search for items..."
-                  class="w-full rounded-full bg-lightPrimary px-4 py-1.5 ps-10 placeholder:text-primary">
-                <span class="absolute start-3 top-1/2 -translate-y-1/2">
-                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                    stroke-linejoin="round" class="text-primary" height="1em" width="1em"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <path d="m21 21-4.3-4.3"></path>
-                  </svg>
-                </span>
-              </form>
             </div>
-            <div class="flex justify-between">
-              <ul class="flex w-24 justify-between">
+            <div class="col-4">
+              <h5 class="text-center text-sm text-primaryNav">
+                Free Delivery Over $50
+                <a class="font-semibold underline" href="/yum_r/home"
+                  >Claim Offer</a
+                >
+              </h5>
+            </div>
+            <div class="col-4">
+              <div class="flex justify-end">
+                <a
+                  href=""
+                  class="px-2 text-sm text-primaryNav hover:text-primary"
+                  >Help</a
+                >
+                <a
+                  href=""
+                  class="px-2 text-sm text-primaryNav hover:text-primary"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="sticky inset-x-0 top-0 z-30 bg-transparent shadow-md">
+        <div class="container">
+          <div class="row items-center h-14 lg:h-20">
+            <div class="xxl:col-4 xl:col-3 flex items-center gap-2">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="me-4 text-Gray hover:text-primary lg:hidden"
+                height="28"
+                width="28"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+              </svg>
+              <img
+                src="/build/assets/img/logo/logo-1-png.png"
+                alt=""
+                width="130"
+                height="40"
+                class="dark:hidden"
+              />
+              <img
+                src="/build/assets/img/logo/logo-light-vHhBX6Zj.png"
+                alt=""
+                width="130"
+                height="40"
+                class="hidden dark:flex"
+              />
+            </div>
+            <div class="xxl:col-4 xl:col-6 relative">
+              <div class="px-12 -mt-7 -mb-4 z-60 relative hidden">
+                <div class="relative">
+                  <form action="">
+                    <input
+                      type="text"
+                      placeholder="Search for items..."
+                      class="h-10 w-full bg-white shadow-lg rounded-md px-4 py-1.5 ps-10 placeholder:text-primary text-sm focus:outline-primary focus:outline-double"
+                    />
+                    <span class="absolute start-3 top-1/2 -translate-y-1/2">
+                      <svg
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="text-primary text-md"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                      </svg>
+                    </span>
+                    <span class="absolute end-3 right-4 top-1/2 -translate-y-1/2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="text-primary text-sm"
+                      >
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                      </svg>
+                    </span>
+                  </form>
+                </div>
+              </div>
+              <ul class="relative hidden lg:flex justify-center items-center">
                 <li>
-                  <a href="" class="relative">
-                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                      stroke-linejoin="round" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <a
+                    href=""
+                    class="inline-flex items-center text-sm lg:text-base font-medium text-primary py-2 px-4 hover:text-primary"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <div class="inline-flex relative">
+                    <button
+                      class="inline-flex items-center text-sm lg:text-base font-medium text-hoverGray py-2 px-4 hover:text-primary"
+                    >
+                      Dishes
+                      <svg
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="ms-2"
+                        height="16"
+                        width="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </button>
+                    <div
+                      class="absolute z-40 mt-4 min-w-[200px] rounded-lg border border-default-100 bg-white p-1.5 shadow-lg top-full left-1/2 transform -translate-x-1/2 hidden"
+                    >
+                      <ul class="flex flex-col gap-1">
+                        <li>
+                          <a
+                            href=""
+                            class="flex text-Gray py-2 px-3 font-normal hover:text-hoverGray"
+                            >Dishes Grid</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href=""
+                            class="flex text-Gray py-2 px-3 font-normal hover:text-hoverGray"
+                            >Dishes List</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href=""
+                            class="flex text-Gray py-2 px-3 font-normal hover:text-hoverGray"
+                            >Dish Details</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="inline-flex relative">
+                    <button
+                      class="inline-flex items-center text-sm lg:text-base font-medium text-hoverGray py-2 px-4 hover:text-primary whitespace-nowrap"
+                    >
+                      Mega Menu
+                      <svg
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="ms-2"
+                        height="16"
+                        width="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </button>
+                    <div
+                      class="absolute inset-x-0 top-full z-10 mt-4 w-full min-w-full hidden"
+                      style="position: fixed; inset: 90px auto auto 0px"
+                    >
+                      <div class="container mx-auto px-3 w-full">
+                        <div
+                          class="overflow-hidden rounded-lg border border-default-200 bg-white shadow-lg dark:bg-default-50"
+                        >
+                          <div class="grid grid-cols-12">
+                            <div class="col-span-2">
+                              <div class="h-full w-full px-6 py-10 bg-bgGray">
+                                <nav class="flex flex-col space-y-3.5">
+                                  <button
+                                    class="flex justify-between transition-all hover:text-primary font-medium text-Gray"
+                                  >
+                                    Wraps
+                                    <svg
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-width="2"
+                                      viewBox="0 0 24 24"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      class="ms-auto"
+                                      height="20"
+                                      width="20"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path d="m9 18 6-6-6-6"></path>
+                                    </svg>
+                                  </button>
+                                  <button
+                                    class="flex justify-between transition-all hover:text-primary font-medium text-Gray"
+                                  >
+                                    Noodles
+                                    <svg
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-width="2"
+                                      viewBox="0 0 24 24"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      class="ms-auto"
+                                      height="20"
+                                      width="20"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path d="m9 18 6-6-6-6"></path>
+                                    </svg>
+                                  </button>
+                                  <button
+                                    class="flex justify-between transition-all hover:text-primary font-medium text-Gray"
+                                  >
+                                    Mexican cuisine
+                                    <svg
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-width="2"
+                                      viewBox="0 0 24 24"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      class="ms-auto"
+                                      height="20"
+                                      width="20"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path d="m9 18 6-6-6-6"></path>
+                                    </svg>
+                                  </button>
+                                  <button
+                                    class="flex justify-between transition-all hover:text-primary font-medium text-Gray"
+                                  >
+                                    Tacos
+                                    <svg
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-width="2"
+                                      viewBox="0 0 24 24"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      class="ms-auto"
+                                      height="20"
+                                      width="20"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path d="m9 18 6-6-6-6"></path>
+                                    </svg>
+                                  </button>
+                                  <button
+                                    class="flex justify-between transition-all hover:text-primary font-medium text-Gray"
+                                  >
+                                    Smart Meals
+                                    <svg
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-width="2"
+                                      viewBox="0 0 24 24"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      class="ms-auto"
+                                      height="20"
+                                      width="20"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path d="m9 18 6-6-6-6"></path>
+                                    </svg>
+                                  </button>
+                                  <button
+                                    class="flex justify-between transition-all hover:text-primary font-medium text-Gray"
+                                  >
+                                    Burger
+                                    <svg
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-width="2"
+                                      viewBox="0 0 24 24"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      class="ms-auto"
+                                      height="20"
+                                      width="20"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path d="m9 18 6-6-6-6"></path>
+                                    </svg>
+                                  </button>
+                                  <button
+                                    class="flex justify-between transition-all hover:text-primary font-medium text-Gray"
+                                  >
+                                    Beverages & Desserts
+                                    <svg
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-width="2"
+                                      viewBox="0 0 24 24"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      class="ms-auto"
+                                      height="20"
+                                      width="20"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path d="m9 18 6-6-6-6"></path>
+                                    </svg>
+                                  </button>
+                                </nav>
+                              </div>
+                            </div>
+                            <div class="col-span-10">
+                              <div class="py-10">
+                                <div class="grid grid-cols-4 divide-x">
+                                  <div class="ps-6">
+                                    <h6
+                                      class="text-base font-medium text-grayBold"
+                                    >
+                                      Italian Pasta Dishes
+                                    </h6>
+                                    <ul
+                                      class="mt-4 grid space-y-3 text-Gray text-sm font-medium"
+                                    >
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Spaghetti Bolognese</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Fettuccine Alfredo</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Lasagna</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Carbonara</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Penne alla Vodka</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="ps-6">
+                                    <h6
+                                      class="text-base font-medium text-grayBold"
+                                    >
+                                      Asian Noodle Dishes
+                                    </h6>
+                                    <ul
+                                      class="mt-4 grid space-y-3 text-Gray text-sm font-medium"
+                                    >
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Ramen</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Pad Thai</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Pho</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Chow Mein</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Udon Stir-Fry</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Soba Noodles</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Lo Mein</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="ps-6">
+                                    <h6
+                                      class="text-base font-medium text-grayBold"
+                                    >
+                                      Chinese Noodle Dishes
+                                    </h6>
+                                    <ul
+                                      class="mt-4 grid space-y-3 text-Gray text-sm font-medium"
+                                    >
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Beef Chow Fun</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Dan Dan Noodles</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Sesame Noodles</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Wonton Noodle Soup</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Zha Jiang Mian</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="ps-6">
+                                    <h6
+                                      class="text-base font-medium text-grayBold"
+                                    >
+                                      Japanese Noodle Dishes
+                                    </h6>
+                                    <ul
+                                      class="mt-4 grid space-y-3 text-Gray text-sm font-medium"
+                                    >
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Yakisoba</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Tempura Udon</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Hiyashi Chukakies</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="transition-all hover:text-primary"
+                                          href=""
+                                          >Sushi Rolls</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="inline-flex relative">
+                    <button
+                      class="inline-flex items-center text-sm lg:text-base font-medium text-hoverGray py-2 px-4 hover:text-primary"
+                    >
+                      Pages
+                      <svg
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="ms-2"
+                        height="16"
+                        width="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </button>
+                    <div
+                      class="absolute z-40 mt-4 min-w-[200px] rounded-lg border border-default-100 bg-white p-1.5 shadow-lg hidden"
+                      style="
+                        position: fixed;
+                        inset: 20px auto auto 0px;
+                        margin: 0px;
+                        transform: translate(825px, 70px);
+                      "
+                    >
+                      <ul class="flex flex-col gap-1">
+                        <li>
+                          <a
+                            href=""
+                            class="flex text-Gray py-2 px-3 font-normal hover:text-hoverGray"
+                            >Cart</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href=""
+                            class="flex text-Gray py-2 px-3 font-normal hover:text-hoverGray"
+                            >Wishlist</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href=""
+                            class="flex text-Gray py-2 px-3 font-normal hover:text-hoverGray"
+                            >Checkout</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href=""
+                            class="flex text-Gray py-2 px-3 font-normal hover:text-hoverGray"
+                            >FAQ</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href=""
+                            class="flex text-Gray py-2 px-3 font-normal hover:text-hoverGray"
+                            >Contact Us</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href=""
+                            class="flex text-Gray py-2 px-3 font-normal hover:text-hoverGray"
+                            >Error 404</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href=""
+                            class="flex text-Gray py-2 px-3 font-normal hover:text-hoverGray"
+                            >Login</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href=""
+                            class="flex text-Gray py-2 px-3 font-normal hover:text-hoverGray"
+                            >Register</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href=""
+                            class="flex text-Gray py-2 px-3 font-normal hover:text-hoverGray"
+                            >Forgot Password</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href=""
+                            class="flex text-Gray py-2 px-3 font-normal hover:text-hoverGray"
+                            >Reset Password</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href=""
+                            class="flex text-Gray py-2 px-3 font-normal hover:text-hoverGray"
+                            >Logout</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="inline-flex items-center text-sm lg:text-base font-medium text-hoverGray py-2 px-4 hover:text-primary"
+                    >Admin</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="xxl:col-4 xl:col-3 flex justify-end gap-8 items-center">
+              <div class="flex justify-end xxl:relative xxl:block w-72">
+                <form action="">
+                  <input
+                    type="text"
+                    placeholder="Search for items..."
+                    class="hidden xxl:block w-full rounded-full bg-lightPrimary px-4 py-1.5 ps-10 placeholder:text-primary focus:outline-primary focus:outline-double"
+                  />
+                  <span class="xxl:absolute start-3 top-1/2 -translate-y-1/2">
+                    <svg
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="xxl:text-primary xxl:text-md text-Gray text-xl"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <path d="m21 21-4.3-4.3"></path>
+                    </svg>
+                  </span>
+                </form>
+              </div>
+              <ul class="flex justify-end gap-5 w-24">
+                <li>
+                  <a
+                    href=""
+                    class="relative text-Gray hover:text-primary transition-all"
+                  >
+                    <svg
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      height="20"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <circle cx="8" cy="21" r="1"></circle>
                       <circle cx="19" cy="21" r="1"></circle>
-                      <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                    </svg>
-                    <span
-                      class="absolute -top-2.5 end-0 z-10 inline-flex h-5 w-5 translate-x-1/2 transform items-center justify-center rounded-full bg-hoverPrimary p-1 text-xs font-bold leading-none  text-red-100">
-                      0
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a class="relative flex text-base text-default-600 transition-all hover:text-primary"
-                    href="/yum_r/wishlist">
-                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                      stroke-linejoin="round" class="fill-red-500  text-red-500" height="20" width="20"
-                      xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
-                      </path>
+                        d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                      ></path>
                     </svg>
                     <span
-                      class="absolute -top-2.5 end-0 z-10 inline-flex h-5 w-5 translate-x-1/2 transform items-center justify-center rounded-full bg-hoverPrimary p-1 text-xs font-bold leading-none text-red-100">
+                      class="absolute -top-2.5 end-0 z-10 inline-flex h-5 w-5 translate-x-1/2 transform items-center justify-center rounded-full bg-hoverPrimary p-1 text-xs font-semibold leading-none text-red-100"
+                    >
                       0
-
                     </span>
                   </a>
                 </li>
                 <li>
-                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                    stroke-linejoin="round" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
+                  <a
+                    class="relative flex text-base text-default-600 transition-all hover:text-primary"
+                    href="/yum_r/wishlist"
+                  >
+                    <svg
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="fill-red-500 text-red-500"
+                      height="20"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                      ></path>
+                    </svg>
+                    <span
+                      class="absolute -top-2.5 end-0 z-10 inline-flex h-5 w-5 translate-x-1/2 transform items-center justify-center rounded-full bg-hoverPrimary p-1 text-xs font-semibold leading-none text-red-100"
+                    >
+                      0
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <div
+                    class="relative text-Gray hover:text-primary transition-all"
+                  >
+                    <svg
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      height="20"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"
+                      ></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <div
+                      class="absolute z-40 mt-4 min-w-[200px] rounded-lg border border-default-100 bg-white p-1.5 shadow-lg top-full -right-16 hidden"
+                    >
+                      <ul class="flex flex-col gap-1">
+                        <li>
+                          <a
+                            href=""
+                            class="flex items-center gap-3 text-Gray py-2 px-3 font-normal hover:text-hoverGray hover:bg-bgGray transition-all rounded"
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-width="2"
+                              viewBox="0 0 24 24"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              height="16"
+                              width="16"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <circle cx="12" cy="10" r="3"></circle>
+                              <path
+                                d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"
+                              ></path>
+                            </svg>
+                            Admin</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href=""
+                            class="flex items-center gap-3 text-Gray py-2 px-3 font-normal hover:text-hoverGray hover:bg-bgGray transition-all rounded"
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-width="2"
+                              viewBox="0 0 24 24"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              height="16"
+                              width="16"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle cx="8" cy="21" r="1"></circle>
+                              <circle cx="19" cy="21" r="1"></circle>
+                              <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                              ></path>
+                            </svg>
+                            Cart</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href=""
+                            class="flex items-center gap-3 text-Gray py-2 px-3 font-normal hover:text-hoverGray hover:bg-bgGray transition-all rounded"
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-width="2"
+                              viewBox="0 0 24 24"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              height="16"
+                              width="16"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                              ></path>
+                            </svg>
+                            Wishlist</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href=""
+                            class="flex items-center gap-3 text-Gray py-2 px-3 font-normal hover:text-hoverGray hover:bg-bgGray transition-all rounded"
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-width="2"
+                              viewBox="0 0 24 24"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              height="16"
+                              width="16"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"
+                              ></path>
+                              <polyline points="16 17 21 12 16 7"></polyline>
+                              <line x1="21" x2="9" y1="12" y2="12"></line>
+                            </svg>
+                            Log Out</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+      </nav>
+    </header>
+    <aside>
+      <div
+        class="z-50 bg-white fixed top-0 left-0 h-full w-full max-w-[270px] shadow-xl hidden"
+      >
+        <div
+          class="flex justify-center items-center h-16 border-b border-dashed"
+        >
+          <a href="">
+            <img
+              src="/build/assets/img/logo/logo-1-png.png"
+              alt=""
+              width="130"
+              height="40"
+              class="h-10"
+            />
+          </a>
+        </div>
+        <ul class="p-4">
+          <li>
+            <a
+              href=""
+              class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium rounded-md text-primary"
+              >Home</a
+            >
+          </li>
+          <li>
+            <button
+              class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium rounded-md text-hoverGray mt-2 w-full"
+            >
+              Dishes
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="ms-auto h-5 w-5 transition-all text-hoverGray"
+                height="20"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button
+              class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium rounded-md text-hoverGray mt-2 w-full"
+            >
+              Pages
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="ms-auto h-5 w-5 transition-all text-hoverGray"
+                height="20"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a
+              href=""
+              class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium rounded-md text-hoverGray mt-2"
+              >Admin</a
+            >
+          </li>
+        </ul>
       </div>
-    </div>
-  </header>
-  <main class="bg-slate-700">
-
-  </main>
-</body>
-
+    </aside>
+    <main class="bg-gradient-to-l from-orange-600/20 to-transparent"></main>
+  </body>
 </html>
