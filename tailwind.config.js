@@ -24,7 +24,7 @@ module.exports = {
         primaryNav: "#fff7ed",
         textGray: "#0f172a",
         bgPrimaryFade: "#f5822033",
-        textColor : "#020617"
+        textColor: "#020617",
       },
     },
     screens: {
