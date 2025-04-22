@@ -21,7 +21,10 @@ module.exports = {
         hoverGray: "#334155",
         bgGray: "#f1f5f9",
         grayBold: "#1e293b",
-        primaryNav:"#fff7ed",
+        primaryNav: "#fff7ed",
+        textGray: "#0f172a",
+        bgPrimaryFade: "#f5822033",
+        textColor : "#020617"
       },
     },
     screens: {
@@ -45,6 +48,7 @@ module.exports = {
   },
   corePlugins: {
     preflight: true,
+    transform: true,
   },
   purge: false,
   plugins: [
